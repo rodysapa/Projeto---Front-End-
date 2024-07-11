@@ -1,0 +1,101 @@
+* {
+  font-family: 'Kreon';
+  color: rgb(24, 138, 28);
+  padding: 0;
+  margin: 0;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+h1 {
+  margin: 2.125rem;
+  border-bottom: .1875rem solid;
+  border-color: rgb(24, 138, 28);
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.content1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 30%;
+  margin: .75rem;
+  padding: 1.25rem;
+  flex-direction: column;
+}
+.content2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 30%;
+  margin: .75rem;
+  padding: 1.25rem;
+  flex-direction: column;
+}
+.item {
+  display: flex;
+  flex-wrap: nowrap;
+}
+label {
+  margin-top: .9375rem;
+  margin-bottom: .9375rem;
+}
+
+.item .item2:hover {
+  cursor: pointer;
+  filter: brightness(90%);
+}
+
+input {
+  width: 13.75rem;
+  border: none;
+  font-weight: normal;
+  border-bottom: .125rem solid rgb(24, 138, 28);
+  outline: 0;
+}
+.item2 {
+  font-size: medium;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #ffff;
+  width: 8.125rem;
+  border-radius: 1.5625rem;
+  padding: .8125rem;
+  background: linear-gradient(to right, rgb(24, 138, 28) 39%, #062407 98%);
+  border: .0625rem solid rgb(24, 138, 28);
+  transition: all 0.5s ease-in-out;
+}
+
+.but-cad {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 3.125rem;
+}
+
+@media screen and (max-width: 37.5rem) {
+  .item {
+    flex-wrap: wrap;
+  }
+  .container {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .content1 {
+    flex: 100%;
+  }
+  .content2 {
+    margin-top: 0;
+    flex: 100%;
+  }
+  .image-container {
+    display: none;
+  }
+}

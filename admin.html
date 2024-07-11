@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="./admin.css">
+  <script src="./admin_script.js" defer></script>
+  <title>Admin</title>
+</head>
+<body>
+  <div class="div_Mother">
+
+    <div class="title">
+      <h1>ADMIN</h1>
+      <i class="fa-solid fa-user-tie"></i>
+      <a href="./home.html"><i class="fa-solid fa-house" style="color: #188a1c;"></i></a>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="cad">
+      <div class="title_cad">
+        <h1>CADASTRO DE USUÁRIOS</h1>
+      </div>
+      <form class="cad_form">
+        <div class="input_name">
+          <label for="name">Nome</label>
+          <div class="cad_name">
+            <input type="text" id="name" name="name">
+            <i class="fa-solid fa-x" onclick="usuario.limparName()"></i>
+          </div>
+        </div>
+        <div>
+          <label for="email">E-mail</label>
+          <div class="cad_email">
+            <input type="email" id="email" name="email" required>
+            <i class="fa-solid fa-x" onclick="usuario.limparEmail()"></i>
+          </div>
+        </div>
+        <div class="botton_cad">
+          <button type="button" class="cad" onclick="usuario.cadastrarUsuario(event)">Cadastrar Usuário</button>
+        </div>
+      </form>
+      <div class="line"></div>
+    </div>
+
+    <div class="forms">
+      <div class="container">
+        <table>
+          <thead>
+            <tr>
+              <th class="center">Data</th>
+              <th>Nome</th>
+              <th>Email</th>
+              <th class="apagar">Excluir</th>
+            </tr>
+          </thead>
+          <tbody id="tbody">
+            <!-- Aqui serão inseridas as linhas da tabela dinamicamente -->
+          </tbody>
+        </table>
+      </div>
+
+      <div class="botton_excluir">
+        <button onclick="usuario.excluirLista()">Excluir todas as linhas</button>
+      </div>
+
+      <div class="search_cad">
+        <h2>Pesquisa de Cadastros</h2>
+        <form class="search_input" onsubmit="usuario.excluirUsuarioEncontrado(); return false;">
+          <div class="search_input_name">
+            <input type="text" id="searchName" name="name" placeholder="Nome...">
+            <a href="#" onclick="usuario.pesquisarUsuario('name')"><i class="fa-solid fa-magnifying-glass"></i></a>
+          </div>
+          <div class="input_email">
+            <input type="email" id="searchEmail" name="email" placeholder="E-mail...">
+            <a href="#" onclick="usuario.pesquisarUsuario('email')"><i class="fa-solid fa-magnifying-glass"></i></a>
+          </div>
+          
+          <div class="botton_excluid_list">
+            <button type="button" class="list" onclick="usuario.excluirUsuarioEncontrado()">Excluir Linha Destacada</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

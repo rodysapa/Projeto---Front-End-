@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Kreon:wght@300..700&display=swap');
+
+.div_Mother{
+  margin: 1.5rem 5rem 1.5rem 5rem;
+}
+
+.title{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  gap: 2rem;
+  margin-left: 1.5rem;
+}
+
+.title a{
+  align-items: flex-end;
+}
+
+.title h1{
+  font-family: 'Kreon';
+  font-size: 1.5rem;
+  color: #188A1C;
+}
+
+.title i{
+  color:#188A1C;
+  font-size: 1.7rem;
+}
+
+.line{
+  width: auto;
+  height: 0.2rem;
+  background-color: #188A1C;
+}
+
+.title_cad h1{
+  font-family: 'Kreon';
+  font-size: 1.5rem;
+  color: #188A1C;
+  margin-left: 1.5rem;
+}
+
+.cad_form{
+  margin-left: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.cad_form label{
+  font-family: 'Kreon';
+  color: #188A1C;
+  margin-left: 1rem;
+}
+
+.cad_name{
+  display: flex;
+  align-items: center;
+  padding: .3125rem 1.25rem;
+  background-color: transparent;
+  border-radius: 1.25rem;
+  border: solid 0.01rem #188A1C;
+}
+
+.cad_name i{
+  color: #188A1C;
+  font-size: 1rem;
+  cursor: default;
+}
+
+.cad_name input, input:focus{
+  height: 1.5625rem;
+  width: 35vh;
+  border: 0rem;
+  background-color: transparent;
+  outline: 0;
+  padding-left: .625rem;
+  color: #188A1C;
+  font-family: 'Kreon';
+}
+
+.cad_email{
+  display: flex;
+  align-items: center;
+  padding: .3125rem 1.25rem;
+  background-color: transparent;
+  border-radius: 1.25rem;
+  border: solid 0.01rem #188A1C;
+}
+
+.cad_email i{
+  color: #188A1C;
+  font-size: 1rem;
+  cursor: default;
+}
+
+.cad_email input, input:focus{
+  height: 1.5625rem;
+  width: 35vh;
+  border: 0rem;
+  background-color: transparent;
+  outline: 0;
+  padding-left: .625rem;
+  color: #188A1C;
+  font-family: 'Kreon';
+}
+
+.botton_cad button{
+  position: absolute;
+  bottom: 0;
+  min-width: 17vw;
+  min-height: 6vh;
+  background: linear-gradient(to right, #188A1C 39%, #062407 98%);
+  border-radius: 1.875rem;
+  border: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.cad {
+  color: #FFFFFF;
+  font-family: 'Kreon';
+  justify-content: center;
+  align-items: center;
+  font-size: .9375rem;
+  cursor: pointer;
+}
+
+.cad input:hover{
+  filter: brightness( 90% );
+}
+
+.forms{
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.5rem;
+}
+
+.atribut{
+  display: flex;
+  flex-direction: row;
+  gap: 18rem;
+  font-family: "Kreon";
+  font-size: 1rem;
+  color: #188A1C;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+
+table, th, tr, td{
+  margin-top: 2rem;
+  border: solid 0.1rem #188A1C;
+  border-collapse: collapse;
+  color: #188A1C;
+  width: 60rem;
+  height: 2.5rem;
+}
+
+.icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: red; /* Define a cor do ícone como vermelho */
+}
+
+.center{
+  text-align: center;
+}
+
+.destacado {
+  background-color: #ffd700; /* Amarelo */
+}
+
+.botton_excluir {
+  display: flex;
+  justify-content:end;
+  margin-right: 17rem;
+}
+
+.botton_excluir button{
+  margin-top: 3rem;
+  width: 17vw;
+  height: 6vh;
+  background: linear-gradient(to right, #188A1C 39%, #062407 98%);
+  border-radius: 1.875rem;
+  border: none;
+  color: #FFFFFF;
+  font-family: 'Kreon';
+  justify-content: center;
+  align-items: center;
+  font-size: .9375rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+
+.botton_excluir button:hover{
+  filter: brightness( 90% );
+}
+
+
+.search_cad h2{
+  font-family: 'Kreon';
+  font-size: 1.5rem;
+  color: #188A1C;
+}
+
+.search_input{
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+}
+
+.search_input_name{
+  display: flex;
+  align-items: center;
+  padding: .3125rem 1.25rem;
+  background-color: transparent;
+  border-radius: 1.25rem;
+  border: solid 0.01rem #188A1C;
+}
+
+.search_input_name i{
+  color: #188A1C;
+  font-size: 1rem;
+  cursor: default;
+}
+
+.search_input_name input, input:focus{
+  height: 1.5625rem;
+  width: 35vh;
+  border: 0rem;
+  background-color: transparent;
+  outline: 0;
+  padding-left: .625rem;
+  color: #188A1C;
+  font-family: 'Kreon';
+}
+
+input::placeholder{
+  font-family: 'Kreon';
+  color: #188A1C;
+}
+
+.input_email{
+  display: flex;
+  align-items: center;
+  padding: .3125rem 1.25rem;
+  background-color: transparent;
+  border-radius: 1.25rem;
+  border: solid 0.01rem #188A1C;
+}
+
+.input_email i{
+  color: #188A1C;
+  font-size: 1rem;
+  cursor: default;
+}
+
+.input_email input, input:focus{
+  height: 1.5625rem;
+  width: 35vh;
+  border: 0rem;
+  background-color: transparent;
+  outline: 0;
+  padding-left: .625rem;
+  color: #188A1C;
+  font-family: 'Kreon';
+}
+
+.botton_excluid_list button{
+  bottom: 5rem;
+  margin-left: 1.7rem;
+  width: 13vw;
+  height: 6vh;
+  background: linear-gradient(to right, #188A1C 39%, #062407 98%);
+  border-radius: 1.875rem;
+  border: none;
+}
+
+.list{
+  color: #FFFFFF;
+  font-family: 'Kreon';
+  justify-content: center;
+  align-items: center;
+  font-size: .9375rem;
+  cursor: pointer;
+}

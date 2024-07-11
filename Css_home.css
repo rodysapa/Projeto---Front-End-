@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Kreon:wght@300..700&display=swap');
+
+* {
+  font-family: 'Kreon';
+  margin: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.pghome{
+  display: flex;
+}
+
+header {
+  background: linear-gradient(to right, #188a1c 0%, #062407 100%);
+  display: flex;
+  justify-content: space-between;
+  height: 13vh;
+  position: fixed;   
+  width: 100%;
+  top: 0;
+}
+h1{
+  margin: .625rem;
+}
+
+.information{
+  display: flex;
+  padding-left: .625rem;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+}
+
+.information a {
+  font-family: 'Kreon';
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.information img {
+  width: 40px;
+  height: 40px;
+}
+
+.nav{
+  float: left;
+  width: 100%;
+}
+
+ul{
+  list-style: none;
+  padding-left: 0;
+
+}
+
+li{
+  display: block;
+  float: left;
+  padding: 16px;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+
+
+li ul {
+  background: #188a1c;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 240px;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 16px;
+  left: 0;
+  display: none;
+  box-shadow: 0rem .5rem 1rem 0rem rgba(0, 0, 0, 0.2);
+}
+
+li ul li{
+  clear: both;
+  width: 28vw;
+}
+
+ul li:hover, ul li:focus-within{
+  background-color: #4CAF5C;
+  cursor: pointer;
+  font-weight: bolder;
+  transition: 0.3s;
+}
+
+li a:hover{
+  color: green;
+}
+
+ul li:hover>ul, ul li:focus-within>ul, ul li ul:hover, ul li ul:focus {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+.admin i{
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.admin p{
+  margin: 0.2rem;
+  font-family: 'Kreon';
+  color: #ffff;
+  font-size: 1rem;
+}
+
+.click {
+  display: flex;
+  padding-right: 4.6875rem;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+}
+
+.click a {
+  font-family: 'Kreon';
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.click div {
+  flex-direction: column;
+  height: 1.25rem;
+  border-left: .1875rem solid #ffffff;
+}
+.but-doacao {
+  font-size: medium;
+  display: flex;
+  flex-wrap: wrap;
+  margin: .625rem; 
+  color: #ffff;
+  justify-content: center;  
+  text-decoration: none;
+  width: 15.625rem;
+  border-radius: 2.5rem;
+  padding: .5625rem;
+  background: linear-gradient(to right, rgb(24, 138, 28) 39%, #062407 98%);
+  border: .0625rem solid rgb(24, 138, 28);
+  transition: all 0.5s ease-in-out;
+}
+section{
+  margin: 1.25rem;
+
+}
+footer {
+  background: linear-gradient(to right, #188a1c 0%, #062407 100%);
+  display: flex;
+  justify-content: space-between;
+  height: 13vh;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  font-family: 'Kreon';
+  color: #ffffff;
+  font-size: 1.125rem;
+}
+
+
+.rodape{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.direita {
+  display: flex;
+  align-items: end;
+  padding-bottom: 1.25rem;
+  letter-spacing: 2.4px;
+}
+.but-envio{
+  font-size: medium;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  
+  align-items: center;
+  margin: .625rem;
+  color: #ffff;
+  text-decoration: none;
+  width: 6.25rem;
+  border-radius: 2.5rem;
+  padding: .8125rem;
+  background: linear-gradient(to right, rgb(24, 138, 28) 39%, #062407 98%);
+  border: .0625rem solid rgb(24, 138, 28);
+  transition: all 0.5s ease-in-out;    
+}
+img{
+  margin: .3125rem;
+}
+figcaption{
+  font-style: italic;
+}
+p{
+  margin-top: .9375rem;
+}
+main{
+  flex: 60%;
+}
+.form-denuncia{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 0;
+}
+
+
+.denuncia h2{
+  margin-bottom: 1.875rem;
+}
+select, textarea, #local, #date{
+  padding: .3125rem;
+  width: 13.125rem;
+  margin: .3125rem;
+  border-radius: 3.75rem;
+  background-color: #dedede;
+  outline: 0;
+  color: #000000;
+}
+.denuncia-doacao{
+  display: flex;
+  flex-direction:column;
+  flex: 40%;
+  justify-content:flex-start;
+  align-items: center;
+  margin-top: 13vh;
+  border-left: .9375rem solid rgb(58, 119, 58)
+}
+
+.but-envio:hover{
+  cursor: pointer;
+  filter: brightness(90%);
+}
+.but-doacao:hover{
+  filter: brightness(90%);
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" 
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <title>Login</title>
+  <link rel="stylesheet" href="./Css_login.css">
+</head>
+<body>
+
+  <main class="grid">
+
+  <nav class="slider">
+
+    <div class="slides">
+      <!-- div: botão radio -->
+      <input type="radio" name="radio_btn" id="radio1">
+      <input type="radio" name="radio_btn" id="radio2">
+      <input type="radio" name="radio_btn" id="radio3">
+      <input type="radio" name="radio_btn" id="radio4">
+      <input type="radio" name="radio_btn" id="radio5">
+      <!-- div: fim botão radio -->
+
+    <!-- div: imagens rolantes -->
+    <div class="slide first">
+      <img src="./assets/img/Big_cats_Jaguars_Lying_down_Glance_576672_1280x853.jpg" alt="Jaguars"> 
+    </div>
+    <div class="slide">
+      <img src="./assets/img/tartaruga.jpg" alt="Tartarugas"> 
+    </div>
+    <div class="slide">
+      <img src="./assets/img/tucano.jpeg" alt="Tucano"> 
+    </div>
+    <div class="slide">
+      <img src="./assets/img/agua_viva.jpg" alt="Água Viva"> 
+    </div>
+    <div class="slide">
+      <img src="./assets/img/araras.jpg" alt="Arara"> 
+    </div>
+    <!-- div: fim da imagens rolantes -->
+
+    <!-- div: Navegação auto das imagens -->
+    <div class="navigation-auto">
+      <div class="auto-btn1"></div>
+      <div class="auto-btn2"></div>
+      <div class="auto-btn3"></div>
+      <div class="auto-btn4"></div>
+      <div class="auto-btn5"></div>
+    </div>
+    <!-- div: Navegação auto das imagens -->
+
+  </div>
+  
+  <div class="manual-navigation">
+    <label for="radio1" class="manual-btn"></label>
+    <label for="radio2" class="manual-btn"></label>
+    <label for="radio3" class="manual-btn"></label>
+    <label for="radio4" class="manual-btn"></label>
+    <label for="radio5" class="manual-btn"></label>
+  </div>
+
+</nav>
+
+  <section class="login">
+  <h1>Log in</h1>
+  <form method="get" action="./home.html">
+    <div class="email">
+      <i class="fa-solid fa-envelope"></i>
+      <input type="email" id="email" name="email" required><br>
+    </div>
+    <div class="password">
+      <i class="fa-solid fa-lock"></i>
+      <input type="password" id="password" name="pasword" required><br>
+    </div>
+
+    <div class="botton">
+      <input class="enter" type="submit" value="Entrar">
+      <a class="cadastrar" href="./cadastro.html">Cadastrar-se</a>
+    </div>
+
+  </form>
+
+  </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

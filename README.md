@@ -11,3 +11,5 @@ Figma: https://www.figma.com/file/OqoKbQxD9tH2qCHEdeHS72/Design-Projeto-Programa
   Ainda na tela principal temos um formulário onde podemos relatar algum problema ou acidente.
 
   Já na página de adminstrador, é a página onde podemos adicionar admistradores, excluir, pesquisar e também inseridos os dados no localStore (API JavaScript).
+
+  No futuro pretendo introduzir a parte backend, desde de banco de dados e frameworks.
